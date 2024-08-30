@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="665.0" prefWidth="949.0" style="-fx-background-color: #f3f2f5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <AnchorPane prefHeight="665.0" prefWidth="212.0" style="-fx-background-color: #cfdcf9;">
+         <children>
+            <Label layoutX="47.0" layoutY="27.0" text="Todo List">
+               <font>
+                  <Font name="Tahoma Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="16.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="42.0" layoutY="108.0" prefHeight="27.0" prefWidth="102.0" text="Today">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="35.0" layoutY="204.0" prefHeight="27.0" prefWidth="102.0" text="Work">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="36.0" layoutY="235.0" prefHeight="27.0" prefWidth="102.0" text="Personal">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="36.0" layoutY="268.0" prefHeight="27.0" prefWidth="102.0" text="Urgent">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="26.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/trash-bin.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="55.0" layoutY="609.0" prefHeight="27.0" prefWidth="71.0" text="Trash Bin">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="26.0" layoutY="172.0" text="MAIN">
+               <font>
+                  <Font name="Tahoma Bold" size="11.0" />
+               </font>
+            </Label>
+            <Line endX="119.0" layoutX="84.0" layoutY="180.0" startX="-15.5" stroke="#bfbfbf" />
+            <Label layoutX="26.0" layoutY="318.0" text="RECORDS">
+               <font>
+                  <Font name="Tahoma Bold" size="11.0" />
+               </font>
+            </Label>
+            <Line endX="119.0" layoutX="84.0" layoutY="326.0" startX="3.0" stroke="#bfbfbf" />
+            <JFXButton layoutX="42.0" layoutY="349.0" prefHeight="27.0" prefWidth="102.0" text="Completed">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="43.0" layoutY="381.0" prefHeight="27.0" prefWidth="102.0" text="Archived">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXTextField focusColor="#5e86c4" layoutX="394.0" layoutY="20.0" prefHeight="27.0" prefWidth="376.0" promptText="Find Somthing" style="-fx-border-radius: 40;" />
+      <ImageView fitHeight="25.0" fitWidth="17.0" layoutX="374.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/search-icon.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="816.0" layoutY="77.0" prefHeight="33.0" prefWidth="102.0" style="-fx-background-color: #486ec3;" text="+ Create Task" textFill="WHITE">
+         <font>
+            <Font name="Tahoma Bold" size="11.0" />
+         </font>
+      </JFXButton>
+      <Circle fill="WHITE" layoutX="896.0" layoutY="34.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="884.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/notification-100.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
